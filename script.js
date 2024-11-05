@@ -31,11 +31,21 @@ humanSelection = humanSelection.toLowerCase();
 console.log(humanSelection);
 
 
-
+function playGame() {
 //SCORES
 let computerScore = 0;
 let humanScore = 0;
 
+
+for (let i = 1; i <= 4; i++) {
+ 
+ if (i <=4) {   
+    console.log(playRound(computerSelection, humanSelection))
+    return result = i;
+ } else {
+    return "Game over";
+ }
+}
 
 //PLAY ROUND
 // a function that takes the human and computer player choices as arguments, 
@@ -73,5 +83,18 @@ function playRound(computerChoice, humanChoice) {
     }
 }
 
-console.log(playRound(computerSelection, humanSelection)); 
-console.log("The score is - " + "Computer: " + computerScore + " You: " + humanScore);
+//let result = playRound(computerSelection, humanSelection);
+    return result;
+
+//return (playRound(computerSelection, humanSelection)); 
+//return ("The score is - " + "Computer: " + computerScore + " You: " + humanScore);
+
+}
+
+console.log(playGame());
+console.log(playGame());
+console.log(playGame());
+
+
+
+
